@@ -22,20 +22,19 @@ public class Calculator {
         System.out.println("The sum is " + sum);
 
 
-        System.out.println("Please enter an operation (add,subtract,multiply,divide");
+        System.out.println("Please enter an operation (add,subtract,multiply,divide)");
         String operation = scan1.next();
 
-
-
         double result = switch (operation) {
-            case "add" -> {
-                yield firstNum + secondNum;
-            }
+
+            case "add" -> firstNum + secondNum;
+
             case "subtract" ->  firstNum - secondNum;
 
             case "multiply" -> firstNum * secondNum;
 
             case "divide" -> firstNum / secondNum;
+
 
             default -> {
 
@@ -43,6 +42,8 @@ public class Calculator {
                 yield 0;
             }
         };
+
+        System.out.println("The result is " + result);
 
     }
 }
