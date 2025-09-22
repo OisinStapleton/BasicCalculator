@@ -2,6 +2,9 @@ package ie.atu;
 
 import java.util.Scanner;
 
+// BasicCalculator that runs programs and adds two numbers from User input.
+// Programme then prompts user for an operator to complete calculation
+
 public class Calculator {
     public static void main(String[] args) {
 
