@@ -21,10 +21,12 @@ public class Calculator {
         double secondNum = scan1.nextDouble();
         System.out.println("You entered " + secondNum);
 
+        // Enter sum of first and second number
         double sum = firstNum + secondNum;
         System.out.println("The sum is " + sum);
 
 
+        // Enter an operator
         System.out.println("Please enter an operation (add,subtract,multiply,divide)");
         String operation = scan1.next();
 
@@ -38,7 +40,7 @@ public class Calculator {
 
             case "divide" -> firstNum / secondNum;
 
-
+            // Default case
             default -> {
 
                 System.out.println("Invalid Operation.");
@@ -46,6 +48,7 @@ public class Calculator {
             }
         };
 
+        //Print result
         System.out.println("The result is " + result);
 
     }
